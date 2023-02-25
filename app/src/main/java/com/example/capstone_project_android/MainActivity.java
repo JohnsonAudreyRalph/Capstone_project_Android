@@ -12,6 +12,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.WindowManager;
+import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
 
@@ -40,8 +41,34 @@ public class MainActivity extends AppCompatActivity {
         NetworkInfo networkInfo = Connect.getActiveNetworkInfo();
         if(networkInfo != null && networkInfo.isConnectedOrConnecting()){
             Show_webView.loadUrl("file:///android_asset/index.html");
+//            Show_webView.setWebViewClient(new WebViewClient() {
+//                @Override
+//                public void onPageFinished(WebView view, String url) {
+//                    Log.d("sode","Show_webView onPageFinished url="+url);
+//                    //gọi 1 đoạn code js chạy trong trang
+//                    //code js này ko có sẵn trong trang
+//                    //document.getElementById('NhietDo').innerText
+//                    String js1="javascript:window.runJavaScript.nhan_Temp(document.getElementById('NhietDo').innerText);";
+//                    Show_webView.loadUrl(js1);
+//                    Log.d("sode","Show_webView onPageFinished url="+js1);
+//                    //
+//                }
+//            });
         }else{
             Show_webView.loadUrl("file:///android_asset/Disconnect.html");
         }
     }
+//    String giai_db="Loading...";
+//    @JavascriptInterface
+//    public void nhan_Temp(String giai_db_js){
+//        //nhận đc số đề thì https...
+//        if(giai_db_js!=null && giai_db_js !="")
+//            giai_db=giai_db_js;
+//        Log.d("sode","nhan dc giai_db_js = "+giai_db_js);
+//        Log.d("sode","nhan dc giai_db = "+giai_db);
+//        //truyền xuống trang display: sode.html local
+//
+//        //chưa truyền đc, có gì đó sai sai
+//        //webView_display.loadUrl("javascript:hienthisode('1234')");
+//    }
 }

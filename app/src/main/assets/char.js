@@ -20,9 +20,9 @@ function GetJSONData(){
                 Data_Humidity.push(humidity);
             });
         // alert(Data_Time)
-        console.log(Data_Time);
-        console.log(Data_Temperature);
-        console.log(Data_Humidity);
+//        console.log(Data_Time);
+//        console.log(Data_Temperature);
+//        console.log(Data_Humidity);
     })
 }
 
