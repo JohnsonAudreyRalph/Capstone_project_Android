@@ -15,5 +15,6 @@ promise.then(function(result) {
 function renderCity(data){
     for (const x of data) {
         citis.options[citis.options.length] = new Option(x.name, x.code);
+        console.log(x.name)
     }
 }

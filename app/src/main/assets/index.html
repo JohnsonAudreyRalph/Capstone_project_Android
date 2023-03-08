@@ -85,8 +85,70 @@
                             <div class="ms-3">
                                 <p class="mb-2">Khu vực</p>
                                 <h6 class="mb-0">
-                                    <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm">
-                                        <option value="" selected>Chọn khu vực</option>           
+                                    <select class="form-select form-select-sm mb-3" id="city" aria-label=".form-select-sm" onchange="Change_Values(this)">
+                                        <option value="Hà Nội">Thành phố Hà Nội</option>
+                                        <option value="Hà Giang">Tỉnh Hà Giang</option>
+                                        <option value="Cao Bằng">Tỉnh Cao Bằng</option>
+                                        <option value="Bắc Kạn">Tỉnh Bắc Kạn</option>
+                                        <option value="Tuyên Quang">Tỉnh Tuyên Quang</option>
+                                        <option value="Lào Cai">Tỉnh Lào Cai</option>
+                                        <option value="Lai Châu">Tỉnh Điện Biên</option>
+                                        <option value="Lai Châu">Tỉnh Lai Châu</option>
+                                        <option value="Sơn La">Tỉnh Sơn La</option>
+                                        <option value="Yên Bái">Tỉnh Yên Bái</option>
+                                        <option value="Hòa Bình">Tỉnh Hoà Bình</option>
+                                        <option value="Thái Nguyên">Tỉnh Thái Nguyên</option>
+                                        <option value="Lạng Sơn">Tỉnh Lạng Sơn</option>
+                                        <option value="Tỉnh Quảng Ninh">Tỉnh Quảng Ninh</option>
+                                        <option value="Tỉnh Bắc Giang">Tỉnh Bắc Giang</option>
+                                        <option value="Tỉnh Phú Thọ">Tỉnh Phú Thọ</option>
+                                        <option value="Tỉnh Vĩnh Phúc">Tỉnh Vĩnh Phúc</option>
+                                        <option value="Tỉnh Bắc Ninh">Tỉnh Bắc Ninh</option>
+                                        <option value="Tỉnh Hải Dương">Tỉnh Hải Dương</option>
+                                        <option value="Thành phố Hải Phòng">Thành phố Hải Phòng</option>
+                                        <option value="Tỉnh Hưng Yên">Tỉnh Hưng Yên</option>
+                                        <option value="Tỉnh Thái Bình">Tỉnh Thái Bình</option>
+                                        <option value="Tỉnh Hà Nam">Tỉnh Hà Nam</option>
+                                        <option value="Nam Định">Tỉnh Nam Định</option>
+                                        <option value="Ninh Bình">Tỉnh Ninh Bình</option>
+                                        <option value="Thanh Hóa">Tỉnh Thanh Hóa</option>
+                                        <option value="Tỉnh Nghệ An">Tỉnh Nghệ An</option>
+                                        <option value="Hà Tĩnh">Tỉnh Hà Tĩnh</option>
+                                        <option value="Tỉnh Quảng Bình">Tỉnh Quảng Bình</option>
+                                        <option value="Quảng Trị">Tỉnh Quảng Trị</option>
+                                        <option value="Huế">Tỉnh Thừa Thiên Huế</option>
+                                        <option value="Đà Nẵng">Thành phố Đà Nẵng</option>
+                                        <option value="Tỉnh Quảng Nam">Tỉnh Quảng Nam</option>
+                                        <option value="Tỉnh Quảng Ngãi">Tỉnh Quảng Ngãi</option>
+                                        <option value="Bình Định">Tỉnh Bình Định</option>
+                                        <option value="Tỉnh Phú Yên">Tỉnh Phú Yên</option>
+                                        <option value="Khánh Hòa">Tỉnh Khánh Hòa</option>
+                                        <option value="Tỉnh Ninh Thuận">Tỉnh Ninh Thuận</option>
+                                        <option value="Tỉnh Bình Thuận">Tỉnh Bình Thuận</option>
+                                        <option value="Kon Tum">Tỉnh Kon Tum</option>
+                                        <option value="Gia Lai">Tỉnh Gia Lai</option>
+                                        <option value="Gia Lai">Tỉnh Đắk Lắk</option>
+                                        <option value="Buôn Ma Thuột">Tỉnh Đắk Nông</option>
+                                        <option value="Hải Phòng">Tỉnh Lâm Đồng</option>
+                                        <option value="Tỉnh Bình Phước">Tỉnh Bình Phước</option>
+                                        <option value="Tỉnh Tây Ninh">Tỉnh Tây Ninh</option>
+                                        <option value="Tỉnh Bình Dương">Tỉnh Bình Dương</option>
+                                        <option value="Biên Hòa">Tỉnh Đồng Nai</option>
+                                        <option value="Quảng Ngãi">Tỉnh Bà Rịa - Vũng Tàu</option>
+                                        <option value="Thành phố Hồ Chí Minh">Thành phố Hồ Chí Minh</option>
+                                        <option value="Long An">Tỉnh Long An</option>
+                                        <option value="Tỉnh Tiền Giang">Tỉnh Tiền Giang</option>
+                                        <option value="Tỉnh Bến Tre">Tỉnh Bến Tre</option>
+                                        <option value="Tỉnh Trà Vinh">Tỉnh Trà Vinh</option>
+                                        <option value="Vĩnh Long">Tỉnh Vĩnh Long</option>
+                                        <option value="Tỉnh Nghệ An">Tỉnh Đồng Tháp</option>
+                                        <option value="An Giang">Tỉnh An Giang</option>
+                                        <option value="Tỉnh Quảng Bình">Tỉnh Kiên Giang</option>
+                                        <option value="Cần Thơ">Thành phố Cần Thơ</option>
+                                        <option value="An Giang">Tỉnh Hậu Giang</option>
+                                        <option value="Sóc Trăng">Tỉnh Sóc Trăng</option>
+                                        <option value="Bạc Liêu">Tỉnh Bạc Liêu</option>
+                                        <option value="Cà Mau">Tỉnh Cà Mau</option>
                                     </select>
                                 </h6>
                             </div>
@@ -105,8 +167,8 @@
                         <div class="bg-secondary rounded d-flex align-items-center justify-content-between p-4">
                             <i class="fas fa-tint fa-3x change-icon"></i>
                             <div class="ms-3">
-                                <p class="mb-2">Độ ẩm</p>
-                                <h6 class="mb-0"><span id="DoAm"></span>%</h6>
+                                <p class="mb-2">Tốc độ gió</p>
+                                <h6 class="mb-0"><span id="TocDoGio"></span>km/h</h6>
                             </div>
                         </div>
                     </div>
