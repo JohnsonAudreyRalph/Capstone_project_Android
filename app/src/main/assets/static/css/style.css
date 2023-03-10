@@ -12,7 +12,7 @@ body, html{
 }
 
 .bg {
-    background-image: url("img/disconnected.svg");
+    background-image: url("../img/disconnected.svg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -240,11 +240,172 @@ a{
     font-weight: normal;
     border-radius: 50px;
 }
+.card .card-body #calender thead, tbody, tfoot, tr, td, th {
+    border-color: inherit;
+    border-style: solid;
+    border-width: 0;
+}
 
-.back-to-top{
-    position: fixed;
-    display: none;
-    right: 45px;
-    bottom: 45px;
-    z-index: 99;
+.bootstrap-datetimepicker-widget.bottom {
+    top: auto !important;
+}
+
+.bootstrap-datetimepicker-widget .table * {
+    border-bottom-width: 0px;
+}
+
+.bootstrap-datetimepicker-widget .table th {
+    font-weight: 500;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.bootstrap-datetimepicker-widget table td.active,
+.bootstrap-datetimepicker-widget table td.active:hover {
+    background: var(--primary);
+}
+
+.bootstrap-datetimepicker-widget table td.today::before {
+    border-bottom-color: var(--primary);
+}
+
+
+.bootstrap-datetimepicker-widget table td.new{
+    color:#e3e4ea;
+}
+
+.bootstrap-datetimepicker-widget table td.old{
+    color:#e3e4ea;
+}
+
+.bootstrap-datetimepicker-widget table .picker-switch{
+    color:red;
+    text-align: center;
+}
+
+.bootstrap-datetimepicker-widget table td span {
+    display: inline-block;
+    width: 54px;
+    height: 54px;
+    line-height: 54px;
+    margin: 2px 1.5px;
+    cursor: pointer;
+    border-radius: 0.25rem;
+}
+
+
+.clock{
+    font-size: 10vw;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    gap: 10px;
+    text-shadow: 5px 5px 5px #0e5d75;
+    filter: drop-shadow(0 0 40px #0e5d75)
+    drop-shadow(0 0 10px #0e5d75);
+}
+
+.clock_item--active{
+    animation: focus 1s;
+}
+@keyframes focus{
+    0%{
+        filter: blur(10px);
+    }
+    100%{
+        filter: blur(0px);
+    }
+}
+
+/* .alarm{
+    border: 3px solid #2E94E3;
+    border-radius: 8px;
+    
+}
+
+#Box_Width{
+    width: 10px;
+    display: flex;
+}
+
+#APM{
+    width: 50px;
+}
+
+#Box_Width select{
+    border-radius: 50%;
+    display: flex;
+} */
+
+.alarm{
+    border: 3px solid #2E94E3;
+    border-radius: 8px;
+}
+
+hr{
+    border: 1px solid #2E94E3;
+    margin: 20px auto;
+}
+
+.setAlarm{
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+
+.column select{
+    background: #10101E;
+    color: #fff;
+    text-align: center;
+    padding: 8px 4px;
+    border: 1px solid #2E94E3;
+    border-radius: 18px;
+}
+
+.column select option{
+    border-radius: 50%;
+    color: #c30909;
+}
+
+#btn-setAlarm, #stopAlarm{
+    padding: 5px;
+    color: #fff;
+    background: #4141d5;
+    border: 1px solid #2E94E3;
+    border-radius: 18px;
+}
+
+.btn-delete{
+    margin-left: 50px;
+    background-color: brown;
+}
+.btn-delete:hover{
+    background-color: rgb(56, 2, 2);
+}
+
+#btn-setAlarm:hover{
+    cursor: pointer;
+    background: #4fa7e1;
+    box-shadow: 0 0 30px #2E94E3;
+}
+
+.alarmList{
+    color: #110f0f;
+    margin: 14px auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.alarmLog{
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 6px auto;
 }
