@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Ứng dụng đa tiện ích</string>
+    <string name="channel_name">CHANNEL_1</string>
+    <string name="channel_description">Description</string>
 </resources>

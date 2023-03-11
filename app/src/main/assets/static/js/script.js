@@ -89,7 +89,7 @@ $(document).ready(function(){
                 console.log('Sai ở đâu đó')
                 ClockHour_12.innerHTML = lastDate['H']
             }
-            if(lastDate['H'] < 10){
+            if((lastDate['H'] - 12) < 10){
                 Temp = lastDate['H'] - 12
                 ClockHour_12.innerHTML = '0' + Temp
             }
