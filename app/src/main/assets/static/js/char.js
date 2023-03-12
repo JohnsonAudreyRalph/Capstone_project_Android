@@ -22,7 +22,7 @@ function GetJSON(city){
         const day = String(now.getDate()).padStart(2, '0');
         const new_DAY = `${year}-${month}-${day}`;
         const getLink = "https://api.open-meteo.com/v1/forecast?latitude=" + lat +"&longitude=" + lon + "&hourly=temperature_2m,relativehumidity_2m,weathercode&current_weather=true&timezone=Asia%2FBangkok&start_date=" + new_DAY + "&end_date=" + new_DAY
-        // console.log(getLink)
+        console.log(getLink)
         URL_JSON = getLink;
         fetch(URL_JSON)
         .then(response => response.json())

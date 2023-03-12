@@ -67,9 +67,6 @@ $(document).ready(function(){
             if(lastDate['H'] != date.getHours()){
                 lastDate['H'] = date.getHours();
                 newNumber(ClockHour, lastDate['H']);
-                console.log('Thời gian là: ')
-                console.log(lastDate['H'])
-                
             }
             if(lastDate['M'] != date.getMinutes()){
                 lastDate['M'] = date.getMinutes();
@@ -82,16 +79,29 @@ $(document).ready(function(){
             if(lastDate['H'] > 12){
                 ARM.innerHTML = 'PM'
                 console.log('Đã đổi thời gian mới')
-                ClockHour_12.innerHTML = lastDate['H'] - 12
+                // ClockHour_12.innerHTML = lastDate['H'] - 12
             }
             if(lastDate['H'] <= 12){
                 ARM.innerHTML = 'AM'
                 console.log('Sai ở đâu đó')
-                ClockHour_12.innerHTML = lastDate['H']
             }
-            if((lastDate['H'] - 12) < 10){
-                Temp = lastDate['H'] - 12
-                ClockHour_12.innerHTML = '0' + Temp
+            console.log(lastDate['H'])
+            var Check_APM = document.getElementById('APM').innerText;
+            if(Check_APM == "AM"){
+                var temp = lastDate['H'];
+                if(lastDate['H'] < 10){
+                    temp = '0' + lastDate['H'];
+                    console.log("Bây giờ là buổi sáng");
+                }
+                ClockHour_12.innerHTML = temp;
+            }
+            if(Check_APM == "PM"){
+                var temp = lastDate['H'] - 12;
+                if(lastDate['H'] < 10){
+                    temp = '0' + lastDate['H'];
+                    console.log("Bây giờ là buổi tối");
+                }
+                ClockHour_12.innerHTML = temp;
             }
         }, 10)
     }

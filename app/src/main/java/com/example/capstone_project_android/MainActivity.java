@@ -99,11 +99,6 @@ public class MainActivity extends AppCompatActivity {
                     if(AMP.equals("PM")){
                         Get_hour = Get_hour + 12;
                     }
-//                    int Get_time_in_hours = Get_hour < hour ? Get_hour + 24 - hour : Get_hour - hour;
-////                    int Get_time_in_minutes = Get_minute < minute ? Get_minute +  - minute : Get_minute - minute;
-//                    int Get_time_in_minutes = Get_minute - minute;
-//                    int Get_Time = (Get_time_in_hours * 60) + Get_time_in_minutes;
-//                    Toast.makeText(MainActivity.this, "Thời gian lấy được còn lại là : " + Get_Time + " p", Toast.LENGTH_SHORT).show();
                     int Get_time_in_hours;
                     int Get_time_in_minutes;
                     if (Get_hour > hour || (Get_hour == hour && Get_minute >= minute)) {
@@ -148,7 +143,6 @@ public class MainActivity extends AppCompatActivity {
         NotificationManagerCompat notificationManagerCompat = NotificationManagerCompat.from(this);
         notificationManagerCompat.notify(getNotificationId(), notification);
     }
-
     private int getNotificationId(){
         return (int) new Date().getTime();
     }
